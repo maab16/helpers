@@ -3,13 +3,11 @@
 
 if ($handle = opendir(__DIR__ . DIRECTORY_SEPARATOR)) {
 
-    while (false !== ($entry = readdir($handle))) {
+    while (false !== ($file = readdir($handle))) {
 
-        if ($entry != "." && $entry != ".." && $entry != 'loader.php') {
+        if ($file != "." && $file != ".." && $file != 'loader.php') {
 
-            echo "$entry\n";
-
-            require_once($entry);
+            require_once($file);
         }
     }
 
