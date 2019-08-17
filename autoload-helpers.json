@@ -1,0 +1,8 @@
+{ 
+    "autoload": {
+        "files": [
+        	// Create functions.php in 'app/Helpers' directory
+            "app/Helpers/functions.php"
+        ]
+    },
+}
